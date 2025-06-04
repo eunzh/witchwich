@@ -1,0 +1,944 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'NanumSquareNeo';
+    font-size: 15px;
+    line-height: 1.5;
+    min-width: 1320px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+/* header */
+#popup {
+    background-color: #242424;
+    padding: 7px 0;
+}
+
+#popup p {
+    display: flex;
+    justify-content: center;
+    width: 1320px;
+    margin: auto;
+    position: relative;
+    color: #F2F0EB;
+    font-weight: bold;
+}
+
+#popup img {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+
+/* 헤더 nav */
+header {
+    background-color: #f2561d;
+}
+
+.nav {
+    width: 1320px;
+    margin: auto;
+    padding: 13px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img {
+    width: 237px;
+    height: 50px;
+    display: block;
+}
+
+.nav ul {
+    display: flex;
+    gap: 60px;
+}
+
+.nav ul li a {
+    font-family: 'Pretendard';
+    font-size: 20px;
+    display: block;
+    color: #F2F0EB;
+    text-transform: capitalize;
+}
+
+.nav ul li:hover a {
+    color: black;
+}
+
+/* 서브 꾸미기 ----- 시간나면 하기!!!!!
+.sub li a{
+    display: block;
+    background-color: #f2561d;
+    color: #F2F0EB;
+    padding: 20px 0;
+} */
+
+
+/* 1. 메인배너 */
+.mb {
+    height: 850px;
+}
+
+/* 이것도 안하는건가??? */
+/* .mb img{
+    width: 100%;
+} */
+.mb .swiper-slide div {
+    width: 1320px;
+    margin: auto;
+    padding-top: 480px;
+}
+
+.mb h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+}
+
+/* bg1 */
+.mb .bg1 {
+    background: url(../images/mb1.jpg) no-repeat center center / cover;
+}
+
+.mb .bg2 {
+    background: url(../images/mb2.png) no-repeat center center / cover;
+}
+
+.mb .bg3 {
+    background: url(../images/mb3.png) no-repeat center center / cover;
+}
+
+.mb .swiper-button-next:after,
+.mb .swiper-button-prev:after {
+    display: none;
+}
+
+.mb .swiper-button-next,
+.mb .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+}
+
+.mb .swiper-button-next {
+    right: 50%;
+    margin-right: -700px;
+}
+
+.mb .swiper-button-prev {
+    left: 50%;
+    margin-left: -700px;
+}
+
+.mb .swiper-pagination-bullet-active {
+    background-color: #f2561d;
+}
+
+.mb .swiper-pagination-bullet {
+    width: 8px;
+    border-radius: 10px;
+}
+
+/* 2. brand */
+#brand {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    gap: 100px;
+    /* border: 1px solid black; */
+}
+
+.br_img {
+    width: 660px;
+    height: 755px;
+    /* margin: auto; */
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.img_ct {
+    display: block;
+    margin-top: 185px;
+}
+
+.br_txt h3 {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.br_txt h1 {
+    font-size: 50px;
+    padding-top: 50px;
+}
+
+.br_txt h1 span {
+    color: #f2561d;
+}
+
+.br_txt h4 {
+    font-size: 34px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.br_txt p {
+    font-size: 16.5px;
+}
+
+/* 3. menu */
+
+/* 슬라이드 */
+.center .swiper-slide {
+    height: auto;
+}
+
+.center .swiper-slide img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.center .swiper-slide-active img {
+    width: 100%;
+}
+
+.center .swiper-wrapper {
+    align-items: center;
+}
+
+#menu h1 {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    padding-top: 200px;
+}
+
+/* 탭메뉴 */
+.tab {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 1320px;
+    margin: auto;
+}
+
+.tab>li {
+    width: 260px;
+}
+
+.tab>li>a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 4px solid #D9D9D9;
+}
+
+.tab>li.on>a {
+    border-color: #f2561d;
+    color: #f2561d;
+    font-weight: 600;
+}
+
+.tab>li.on>a:hover {
+    border-bottom: 4px solid #f2561d;
+}
+
+.tab>li.on>.tab_in {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+
+.center {
+    margin: auto;
+    width: 893px;
+    height: 580px;
+}
+
+.tab>li>.tab_in {
+    height: 0;
+    overflow: hidden;
+}
+
+.tab li .swiper-button-prev,
+.tab li .swiper-button-next {
+    display: none;
+}
+
+.tab li.on .swiper-button-next,
+.tab li.on .swiper-button-prev {
+    display: block;
+}
+
+.tab .swiper-button-next:after,
+.tab .swiper-button-prev:after {
+    display: none;
+}
+
+.tab .swiper-button-next,
+.tab .swiper-button-prev {
+    width: 24px;
+    height: 24px;
+}
+
+.tab_title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+#menu h4,
+#menu p {
+    display: block;
+    text-align: center;
+}
+
+#menu a:hover {
+    color: #f2561d;
+}
+
+#menu h4 {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+#menu p {
+    margin-top: 5px;
+}
+
+/* 4.witchs pick */
+
+.p_box {
+    width: 1320px;
+    margin: 700px auto 150px;
+}
+
+.p_box h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.pick,
+.past {
+    border-top: 1px solid black;
+    display: flex;
+    padding-top: 60px;
+}
+
+.pick {
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.pick img {
+    width: 660px;
+    height: 400px;
+}
+
+.p_txt {
+    align-self: flex-end;
+    width: 580px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.p_txt h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.p_txt h5 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.p_txt span {
+    font-weight: bold;
+}
+
+.p_txt p {
+    border-top: 1px black solid;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.past {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.past h4,
+.past p {
+    text-align: center;
+}
+
+.past h4 {
+    margin-top: 10px;
+}
+
+.past p {
+    font-size: 13px;
+}
+
+.past img {
+    display: block;
+    filter: grayscale(100%);
+    transition: 0.4s
+}
+
+.imgbox {
+    overflow: hidden;
+}
+
+.imgbox img:hover {
+    transform: scale(1.2, 1.2);
+    filter: grayscale(0%);
+
+}
+
+/* 5. gooods 굿즈 */
+#goods h1,
+#goods h3,
+#goods h4,
+#goods p {
+    text-align: center;
+}
+
+.g_box {
+    width: 1320px;
+    margin: 0 auto 15px;
+    border-bottom: 1px solid black;
+}
+
+.g_box h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+#goods h3 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+#goods h4 {
+    margin-top: 15px;
+}
+
+.simply-scroll .simply-scroll-list li:hover,
+.simply-scroll .simply-scroll-list li:hover a
+{
+    transform: translateY(-10px);
+    color: #f2561d;
+}
+.simply-scroll .simply-scroll-list li {
+    transition: 0.5s;
+}
+
+/* Container DIV - automatically generated */
+.simply-scroll-container {
+    position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip {
+    position: relative;
+    overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.simply-scroll-list li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.simply-scroll-list li img {
+    border: none;
+    display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+
+/* Container DIV */
+.simply-scroll {
+    width: 100%;
+    height: 450px;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+    width: 100%;
+    height: 100%;
+}
+
+/* Explicitly set height/width of each list item */
+.simply-scroll .simply-scroll-list li {
+    float: left;
+    /* Horizontal scroll only */
+    width: 280px;
+    height: 450px;
+    padding: 0 20px;
+}
+
+/* 6. Witch's kitchen */
+#witchskitchen h1 {
+    width: 1320px;
+    margin: auto;
+    font-size: 40px;
+    font-weight: 800;
+    display: block;
+}
+
+/* 전체 박스 */
+.k_box {
+    margin: 15px auto 150px;
+    padding-top: 40px;
+    border-top: 1px solid black;
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 왼쪽 박스 */
+.kitchen {
+    width: 660px;
+}
+
+.kitchen>.k_mb {
+    width: 100%
+}
+
+.k_txt h3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.k_txt h3>span {
+    font-size: 20px;
+}
+
+.k_txt h4 {
+    font-size: 17px;
+    margin: 20px 0;
+}
+
+.k_txt .red {
+    color: red;
+}
+
+/* 오른쪽 전체 박스 */
+.right {
+    width: 660px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    /* border: #000 1px solid; */
+}
+
+.reserve {
+    font-size: 25px;
+    font-weight: 800;
+
+}
+
+.rt_in {
+    /* border: #000 1px solid; */
+    display: flex;
+    margin: 30px 0 25px;
+    justify-content: space-between;
+}
+
+/* 달력 */
+#datepicker {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.ui-datepicker-week-end {
+    color: red;
+}
+
+.ui-state-active {
+    background-color: #ff642b;
+    color: white;
+    border-radius: 50px;
+}
+
+.ui-state-default {
+    display: block;
+    padding: 10px;
+}
+
+.ui-state-default:hover {
+    color: #ff642b;
+}
+
+.ui-state-active:hover {
+    color: white;
+}
+
+.ui-datepicker-header {
+    position: relative;
+    margin: 10px 10px 15px;
+}
+
+.ui-datepicker-title {
+    font-weight: 700;
+}
+
+.ui-datepicker-prev {
+    background: url(../images/date_prev.png) no-repeat center;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 10px;
+    height: 14px;
+}
+
+.ui-datepicker-next {
+    background: url(../images/date_next.png) no-repeat center;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 10px;
+    height: 14px;
+}
+
+/* form */
+/* 번호, 화살표 주황색으로 변경 질문하기!!! */
+
+.k_form {
+    width: auto;
+    margin: auto auto auto 10px;
+    /* border: #000 1px solid; */
+}
+
+.k_form img {
+    display: block;
+}
+
+.k_form span,
+.k_form>a {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.title>span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.k_form .title {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.k_form .margin {
+    margin-left: 35px;
+}
+
+input, select {
+    padding: 5px 2px;
+    border: #D9D9D9 solid 1px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.line img {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.line>p>b {
+    color: #f2561d;
+}
+select:not(:-internal-list-box):not([multiple]):enabled:hover {
+    background-color: #f2561d ;
+}
+/* 버튼 2개 */
+.submit {
+    background-color: #f2561d;
+    color: white;  
+}
+
+.reset {
+    border: #f2561d 1px solid;
+    background-color: white;
+    }
+
+.btn {
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+    /* border: #000 1px solid; */
+}
+
+.button {
+    display: inline-block;
+    width: 305px;
+    margin-top: 28px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* contact */
+#contact {
+    width: 1320px;
+    margin: 150px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#contact div {
+    width: 630px;
+    height: 230px;
+    border: 1px solid #949494;
+    position: relative;
+}
+
+.c_txt,
+.c_txt_r {
+    position: absolute;
+    color: #373636;
+}
+
+.c_txt {
+    left: 85px;
+    top: 75px;
+}
+
+.c_txt_r {
+    /* border: 1px saddlebrown solid; */
+    right: 85px;
+    top: 75px;
+    text-align: end;
+}
+
+#contact>.gmail>.c_txt_r>h2 {
+    font-size: 25px;
+}
+
+#contact h5 {
+    font-size: 16px;
+    font-weight: 800;
+    display: inline-block;
+    border-bottom: 1px solid #373636;
+    margin-bottom: 5px;
+    /* text-decoration: underline; */
+}
+
+#contact h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#contact h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+.event {
+    background: url(../images/cont1.png) no-repeat 85% center;
+    transition: 0.4s;
+
+}
+
+.recruit {
+    background: url(../images/cont3.png) no-repeat 85% center;
+    transition: 0.4s;
+
+}
+
+.hello {
+    transition: 0.4s;
+    background: url(../images/cont2.png) no-repeat 15% center;
+}
+
+.gmail {
+    background: url(../images/cont4.png) no-repeat 13% 50px;
+    transition: 0.4s;
+}
+
+/* 효과주기 */
+#contact div:hover {
+    transition: 0.5s;
+    border: 1px solid white
+}
+
+#contact div:hover a {
+    color: white;
+
+}
+
+#contact div:hover h5 {
+    border-bottom: 1px solid white;
+}
+
+.event:hover {
+    background: #f2561d url(../images/cont1-1.png) no-repeat 85% center;
+    transition: 0.5s;
+}
+
+.recruit:hover {
+    background: #f2561d url(../images/cont3-1.png) no-repeat 85% center;
+}
+
+.hello:hover {
+    background: #f2561d url(../images/cont2-1.png) no-repeat 15% center;
+}
+
+.gmail:hover {
+    background: #f2561d url(../images/cont4-2.png) no-repeat 11.9% 55px;
+}
+/* store */
+#store{
+    display: flex;
+    flex-wrap: wrap;
+    background: #f6f6f6 url(../images/store.png) no-repeat center top;
+    height: 450px;
+}
+
+.st_box{
+    width: 1320px;
+    margin: auto;
+    padding-left: 720px;
+    box-sizing: border-box;
+        /* border: #000 1px solid; */
+}
+.st_box h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.st_box h3{
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 23px;
+}
+.st_box p{
+    margin-top: 23px;
+    font-size: 16px;
+}
+.st_box span{
+    font-size: 15px;
+    color: #373636;
+}
+iframe{
+    width: 100%;
+    display: block;
+}
+/* footer */
+footer{
+    background-color: #272727;
+    padding: 10px 0 50px;
+}
+.ft_in{
+    width: 1320px;
+    margin: auto;
+    padding: 0 25px;
+    
+}
+.ft_1, .ft_2{
+    padding: 0 25px;
+}
+.ft_1{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 15px 0 10px;
+    margin-bottom: 15px;
+}
+.ft_1 img{
+    display: block;
+}
+.ft_sns{
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+    padding-right: 25px;
+}
+.ft_2{
+    display: flex;
+    justify-content: space-between;
+}
+.ft_box2{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.ft_2 p{
+    color: #bdbdbd;
+    font-size: 12px;
+}
+.ft_2 span{
+    display: block;
+    font-size: 12px;
+    padding: 3px 10px;
+    background-color: #ccc;
+}
+.sitemap{
+    text-align: center;
+    
+}
+.sitemap th>a{
+    color: #f2561d;
+    font-size: 12px;
+}
+.sitemap td>a{
+    font-size: 12px;
+    color: #bdbdbd;
+    padding: 5px 10px 0;
+}

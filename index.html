@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+  <link href="./images/icon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>Witchwich 위치위치</title>
+  <!-- font -->
+  <link rel="stylesheet" href="./css/NanumSquareNeo-font.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- popup -->
+  <div id="popup">
+    <p>카카오톡 친구 추가 시, 10% 쿠폰 제공
+      <a href="#"><img src="./images/exit.png" alt="닫기버튼"></a>
+    </p>
+  </div>
+  <header>
+    <div class="nav">
+      <a href="#"><img src="./images/1줄(화이트).png" alt="위치위치 로고"></a>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#brand">brand</a></li>
+        <li><a href="#menu">menu</a>
+          <!-- <ul class="sub">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Witch's pick</a></li>
+            <li><a href="#">Goods</a></li>
+          </ul> -->
+        </li>
+        <li><a href="#witchskitchen">kitchen</a></li>
+        <li><a href="#contact">contact</a>
+          <!-- <ul class="sub">
+            <li><a href="#">News</a></li>
+            <li><a href="#">Store</a></li>
+          </ul> -->
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- mb 메인배너 슬라이드 -->
+  <section>
+    <div class="swiper mb">
+      <div class="swiper-wrapper">
+        <!-- mb1 -->
+        <div class="swiper-slide bg1">
+          <div>
+            <h1>이번 주 <br>
+              Witch’s Pick <br>
+              출시!</h1>
+          </div>
+        </div>
+        <!-- mb2 -->
+        <div class="swiper-slide bg2">
+          <div>
+            <h1>위치위치와 함께 <br>
+              피크닉 어때요? 포장 10%할인</h1>
+          </div>
+        </div>
+        <!-- mb3 -->
+        <div class="swiper-slide bg3">
+          <div>
+            <h1>
+              다같이, 나만의 위치! <br>
+              Witch’s Kitchen <br>
+              지금 모집중</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next">
+        <img src="./images/mb_next.png" alt="다음">
+      </div>
+      <div class="swiper-button-prev">
+        <img src="./images/mb_prev.png" alt="이전">
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!-- brand -->
+  <section>
+    <div id="brand" class="brand">
+      <div class="br_img">
+        <img src="./images/brand1.png" alt="1" class="b2">
+        <img src="./images/brand2.png" alt="2" class="b4">
+        <img src="./images/brand3.png" alt="3" class="img_ct b3">
+      </div>
+      <div class="br_txt">
+        <h3 class="b1">Brand</h3>
+        <h1 class="b2">오늘도 <span>위치</span>하세요!</h1>
+        <h4 class="b2">Have a Wich day!</h4>
+        <p class="b3">
+          우리는 매일 무엇을 먹을지, 또 어떤 하루를 보낼지 끊임없이 선택합니다. <br>
+          <br>
+          오늘은 어떤 걸 먹을까?’라는 고민에서 시작되었지만, <br>
+          우리는 그 질문에 조금 더 유쾌하고 따뜻하게 대답하고 싶었습니다. <br>
+          익숙한 재료 사이에 낯선 재료 하나를 섞어보거나, <br>
+          평범한 조합에 감각적인 이름을 붙이는 식으로요.<br>
+          <br>
+          샌드위치는 단순한 음식 같지만, <br>
+          동시에 가장 직관적이고 솔직한 음식이기도 합니다. <br>
+          한 입 베어 물었을 때 재료 하나하나가 어떤 말을 건네는지, <br>
+          그 조화가 얼마나 유쾌한지를 우리는 누구보다 잘 알고 있습니다. <br>
+        </p>
+        <p class="b5">
+          <br>
+          그래서 Witchwich는 맛에 대한 진심과 실험정신을 동시에 담았습니다. <br>
+          <br>
+          브랜드의 모든 요소는 이 작은 질문에서 시작됩니다.<br>
+
+          “오늘은 어떤 샌드위치?”<br>
+          이 질문을 던지는 순간, 평범한 일상 속에도 작은 여운이 남기를 바랍니다.<br>
+          Witchwich는 당신의 하루를 조금 더 특별하게 만드는 작은 마법입니다.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- menu -->
+  <section id="menu">
+    <h1>Menu</h1>
+    <ul class="tab">
+      <!-- wich -->
+      <li class="on">
+        <a href="#none" class="tab_title">Wich</a>
+        <div class="tab_in">
+          <div class="swiper center">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#none">
+                  <img src="./images/wich1.png" alt="wich1">
+                  <h4>Sunny Bunny</h4>
+                  <p>써니 버니</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#none">
+                  <img src="./images/wich2.png" alt="wich2">
+                  <h4>Caprese</h4>
+                  <p>카프레제</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#none">
+                  <img src="./images/wich3.png" alt="wich3">
+                  <h4>Figotta</h4>
+                  <p>피고타</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#none">
+                  <img src="./images/wich4.png" alt="wich4">
+                  <h4>Golden Bite</h4>
+                  <p>골든 바이트</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <img src="./images/mn_next.png" alt="다음">
+          </div>
+          <div class="swiper-button-prev">
+            <img src="./images/mn_prev.png" alt="이전">
+          </div>
+        </div>
+      </li>
+      <!-- side -->
+      <li>
+        <a href="#none" class="tab_title">Side</a>
+        <div class="tab_in">
+          <div class="swiper center">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#none">
+                  <img src="./images/side1.png" alt="side1">
+                  <h4>Carrot salad</h4>
+                  <p>당근 라페</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#none">
+                  <img src="./images/side2.png" alt="side2">
+                  <h4>Tomato marinade</h4>
+                  <p>
+                    토마토 절임</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#none">
+                  <img src="./images/side3.png" alt="side3">
+                  <h4>Egg Potato salad</h4>
+                  <p>달걀 감자 샐러드</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#none">
+                  <img src="./images/side4.png" alt="side4">
+                  <h4>Grilled Sausage</h4>
+                  <p>
+                    구운 소시지</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <img src="./images/mn_next.png" alt="다음">
+          </div>
+          <div class="swiper-button-prev">
+            <img src="./images/mn_prev.png" alt="이전">
+          </div>
+        </div>
+      </li>
+      <!-- DRINK -->
+      <li>
+        <a href="#none" class="tab_title">Drink</a>
+        <div class="tab_in">
+          <div class="swiper center">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#none">
+                  <img src="./images/drink1.png" alt="drink1">
+                  <h4>Plum Iced-tea</h4>
+                  <p>
+                    매실 아이스티</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#none">
+                  <img src="./images/drink2.png" alt="drink2">
+                  <h4>Green Juice</h4>
+                  <p>
+                    그린 주스</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#none">
+                  <img src="./images/drink3.png" alt="drink3">
+                  <h4>Black Coffee</h4>
+                  <p>
+                    블랙 커피</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="./images/drink4.png" alt="drink4">
+                  <h4>Grapefruit Juice</h4>
+                  <p>
+                    자몽 주스</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <img src="./images/mn_next.png" alt="다음">
+          </div>
+          <div class="swiper-button-prev">
+            <img src="./images/mn_prev.png" alt="이전">
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- witchs pick -->
+  <section id="witchspick">
+    <div class="p_box">
+      <h1>Witch’s Pick</h1>
+      <div class="pick">
+        <img src="./images/pick_main.png" alt="루벤 샌드위치">
+        <div class="p_txt">
+          <h3>루벤 샌드위치</h3>
+          <h5>Reuben Sandwich</h5>
+          <p>
+            이번에는 소고기의 그윽한 풍미가 느껴지는 미국식 샌드위치, <br>
+            <span>루벤 샌드위치</span>를 준비했어요. <br>
+            <br>
+            바삭한 사워도우 빵에 소고기에 각종 향신료를 더해 훈연한 파스트라미를 겹겹이 채워 넣고, 고다치즈를 올려 고소한 풍미를 더했어요. <br>
+            여기에 사워크라우트로 아삭한 식감과 개운함을 더해 균형을 잡아주었답니다. <br>
+            <br>
+            맛있게 드세요!
+          </p>
+        </div>
+      </div>
+      <h1>Past Wiches</h1>
+      <div class="past">
+        <a href="#none">
+          <div class="imgbox"><img src="./images/pick1.png" alt="1"></div>
+          <h4>Ricotta Pumpkin</h4>
+          <p>리코타 단호박</p>
+        </a>
+        <a href="#none">
+          <div class="imgbox"><img src="./images/pick2.png" alt="2"></div>
+          <h4>Apple Cabbage</h4>
+          <p>사과 양배추</p>
+        </a>
+        <a href="#none">
+          <div class="imgbox"><img src="./images/pick3.png" alt="3"></div>
+          <h4>Shirimp Egg</h4>
+          <p>쉬림프 에그</p>
+        </a>
+        <a href="#none">
+          <div class="imgbox"><img src="./images/pic4.png" alt="4"></div>
+          <h4>Tacos</h4>
+          <p>타코스</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Goods -->
+  <section id="goods">
+    <div class="g_box">
+      <h1>Goods</h1>
+    </div>
+    <h3>위치위치의 굿즈! 지금 만나보세요!</h3>
+    <ul class="g_in">
+      <li><a href="#none"><img src="./images/goods1.png" alt="1">
+          <h4>Hand Towel</h4>
+          <p>12,000</p>
+        </a>
+      </li>
+      <li><a href="#none"><img src="./images/goods2.png" alt="2">
+        <h4>Recipe book(hard-cover)</h4>
+        <p>45,000</p></a>
+        <!-- 이미지 갈아끼워야됨!!!!!! -->
+      </li>
+      <li><a href="#none"><img src="./images/goods3.png" alt="3">
+        <h4>WCH mug</h4>
+        <p>24,000</p></a>
+      </li>
+      <li><a href="#none"><img src="./images/goods4.png" alt="4">
+        <h4>Eco bag</h4>
+        <p>19,000</p></a>
+      </li>
+      <li><a href="#none"><img src="./images/goods5.png" alt="5">
+        <h4>WCH Hoodie</h4>
+        <p>60,000</p></a>
+      </li>
+      <li><a href="#none"><img src="./images/goods6.png" alt="6">
+        <h4>Pot Holder</h4>
+        <p>25,000 </p></a>
+      </li>
+      <li><a href="#none"><img src="./images/goods7.png" alt="7">
+        <h4>Ball cap</h4>
+        <p>30,000</p></a>
+        <!-- 이미지 갈아끼워야됨!!!!!! -->
+      </li>
+    </ul>
+
+  </section>
+  <!-- Witch's kitchen -->
+  <section id="witchskitchen">
+    <h1>Witch’s Kitchen</h1>
+    <div class="k_box">
+      <!-- 왼쪽박스 -->
+      <div class="kitchen">
+        <img src="./images/kitchen1.png" alt="키친 메인배너" class="k_mb">
+        <div class="k_txt">
+          <h3>직접 만들어보는 위치위치!<span>KRW 35,000</span></h3>
+          <h4>📍 Witchwich 매장 2F 🕙 토, 일 오전 10시</h4>
+          <p>위치위치의 시그니처 메뉴 <span class="red">'Caprese'</span>를 함께 만들며 새롭게 주말을 시작해보세요!</p>
+        </div>
+      </div>
+      <!-- 오른쪽박스 -->
+      <div class="right">
+        <!-- 예약하기 -->
+        <a href="#none" class="reserve"><img src="./images/kc_icon1.png" alt="예약"> Reservation</a>
+        <div class="rt_in">
+          <!-- 달력 -->
+          <div id="datepicker">
+
+          </div>
+          <!-- 폼 작성 -->
+          <form class="k_form">
+            <!-- 예약자 -->
+            <div class="title">
+              <img src="./images/kc_icon2.png" alt="예약자"><span>예약자</span>
+            </div>
+            <input type="text" maxlength="10" placeholder="&nbsp;이름" class="margin" size="25">
+            <!-- 연락처 -->
+            <div class="title">
+              <img src="./images/kc_icon3.png" alt="핸드폰"><span>연락처</span>
+            </div>
+            <div class="phone">
+              <select name="tel" id="firsttel" class="margin">
+                <option value="010">&nbsp;
+                  010&nbsp;</option>
+              </select>
+              - <input type="tel" maxlength="4" size="4">
+              - <input type="tel" maxlength="4" size="4">
+            </div>
+            <!-- 이메일 -->
+            <div class="title">
+              <img src="./images/kc_icon4.png" alt="이메일"><span>이메일</span>
+            </div>
+            <input type="email" maxlength="20" size="9" class="margin"> @
+            <select name="mail" id="mail">
+              <option value="공백">선택해주세요</option>
+              <option value="naver">naver.com</option>
+              <option value="gmail">gmail.com</option>
+              <option value="hanmail">hanmail.net</option>
+              <option value="icloud">icoud.com</option>
+              <option value="kakao">kakao.com</option>
+            </select>
+            <!-- 동반 인원 -->
+            <div class="title">
+              <img src="./images/kc_icon7.png" alt="동반"><span>동반 인원</span>
+            </div>
+            <select name="people" id="people" class="margin">
+              <option value="공백">선택해주세요</option>
+              <option value="1">나홀로 방문</option>
+              <option value="2">1명</option>
+              <option value="3">2명</option>
+              <option value="4">3명</option>
+              <option value="5">4명</option>
+            </select>
+          </form>
+        </div>
+        <div class="line">
+          <img src="./images/kc_icon5.png" alt="예약 문의">
+          예약 관련 문의 :
+          <a href="#none" class="tel" title="051-654-2727">매장 전화</a>
+          or
+          <a href="#none" class="mail" title="witchwich@gmail.com">이메일</a>
+        </div>
+        <div class="line">
+          <img src="./images/kc_icon6.png" alt="안내사항">
+          <p>
+            입력하신 연락처로 확정바우처를 보내드립니다. 연락처가 맞는지
+            <b>다시 한번 확인해주세요!</b>
+          </p>
+        </div>
+        <div class="btn">
+          <input type="submit" class="submit button">
+          <input type="reset" class="reset button" value="취소">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section id="contact">
+    <div class="event">
+      <a class="c_txt">
+        <h5>Event</h5>
+        <h2>Pop-up store OPEN</h2>
+        <h3>부산 시민공원에서 만나요!</h3>
+      </a>
+    </div>
+    <div class="hello">
+      <a class="c_txt_r">
+        <h5>Hello?</h5>
+        <h2>+82 051-654-2727</h2>
+        <h3>TIME : AM 7:30 - PM 4:30</h3>
+      </a>
+    </div>
+    <div class="recruit">
+      <a class="c_txt">
+        <h5>Recruit</h5>
+        <h2>Join our WCH crew</h2>
+        <h3>위치위치와 함께할 크루 모집중</h3>
+      </a>
+    </div>
+    <div class="gmail">
+      <a class="c_txt_r">
+        <h5>Contact</h5>
+        <h2 class="25">witchwich@gmail.com</h2>
+        <h3>비즈니스 및 마케팅 문의</h3>
+      </a>
+    </div>
+  </section>
+  <!-- store -->
+  <section id="store">
+    <div class="st_box">
+      <h1>Store</h1>
+      <h3>광안리 본점</h3>
+      <h4>Since 2018. 10.13</h4>
+      <p>
+        부산 수영구 광남로 77 <br>
+        77, Gwangnam-ro, Suyeong-gu, Busan <br>
+        AM 7:30 - PM 4:30 <br>
+      </p>
+      <span>
+        051-654-2727
+        <br>
+        <br>
+        매일 아침, Witcher들의 한 끼를 책임지기 위해 일찍 문을 열고 있어요. <br>
+        편안한 모습으로 만나요!
+      </span>
+    </div>
+  </section>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.2975800061204!2d129.11093487594184!3d35.14919857276356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ed27430b9ad7%3A0x7c6415047400b414!2z67aA7IKw6rSR7Jet7IucIOyImOyYgeq1rCDqtJHrgqjroZwgNzc!5e0!3m2!1sko!2skr!4v1748842573504!5m2!1sko!2skr"
+    width="650" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- footer -->
+  <footer>
+    <div class="ft_in">
+      <div class="ft_1">
+        <a href="#none"><img src="./images/ft_logo.png" alt="푸터 로고"></a>
+        <div class="ft_sns">
+          <a href="#none">
+            <img src="./images/sns2.png" alt="인스타">
+          </a>
+          <a href="#none">
+            <img src="./images/sns1.png" alt="유튜브">
+          </a>
+        </div>
+      </div>
+      <div class="ft_2">
+        <div class="ft_box2">
+          <p>
+            상호명 위치위치 사업장소재지 부산 수영구 광남로 77 사업자등록번호 217-27-217217 <br>
+            전화번호 051-654-2727 이메일 witchwich@gmail.com
+          </p>
+          <a href="#none"><span>사업자정보확인</span></a>
+        </div>
+        <table class="sitemap">
+          <tr>
+            <th><a href="#popup">Home</a></th>
+            <th><a href="#menu">Menu</a></th>
+            <th><a href="#witchskitchen">Kitchen</a></th>
+            <th><a href="#contact">Contact</a></th>
+          </tr>
+          <tr>
+            <td><a href="#brand">Brand</a></td>
+            <td><a href="#witchspick">Witch’s Pick</a></td>
+            <td><a href="#witchskitchen">Reservation</a></td>
+            <td><a href="#contact">Notice</a></td>
+          </tr>
+          <tr>
+            <td>　&nbsp;</td>
+            <td><a href="#goods">Goods</a></td>
+            <td>　&nbsp;</td>
+            <td><a href="#store">Store</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- GSAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <!-- 스크롤 부드럽게 JS -->
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- SCROLL JS -->
+  <script src="./script/jquery.simplyscroll.js"></script>
+  <!-- 달력 -->
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <!-- 꾸민거 js -->
+  <script src="./script/jquery.js"></script>
+</body>
+
+</html>
