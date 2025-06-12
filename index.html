@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="./css/NanumSquareNeo-font.css">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- style -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -86,15 +88,15 @@
   <section>
     <div id="brand" class="brand">
       <div class="br_img">
-        <img src="./images/brand1.png" alt="1" class="b2">
-        <img src="./images/brand2.png" alt="2" class="b4">
-        <img src="./images/brand3.png" alt="3" class="img_ct b3">
+        <img src="./images/brand1.png" alt="1" data-aos="fade-down" >
+        <img src="./images/brand2.png" alt="3" data-aos="fade-down" data-aos-delay="300">
+        <img src="./images/brand3.png" alt="2" class="img_ct" data-aos="fade-down" data-aos-delay="300">
       </div>
       <div class="br_txt">
-        <h3 class="b1">Brand</h3>
-        <h1 class="b2">오늘도 <span>위치</span>하세요!</h1>
-        <h4 class="b2">Have a Wich day!</h4>
-        <p class="b3">
+        <h3 data-aos="fade-up" data-aos-offset="-30" >Brand</h3>
+        <h1 data-aos="fade-left" >오늘도 <span>위치</span>하세요!</h1>
+        <h4 data-aos="fade-left" >Have a Wich day!</h4>
+        <p data-aos="fade-left" data-aos-delay="300">
           우리는 매일 무엇을 먹을지, 또 어떤 하루를 보낼지 끊임없이 선택합니다. <br>
           <br>
           오늘은 어떤 걸 먹을까?’라는 고민에서 시작되었지만, <br>
@@ -106,9 +108,6 @@
           동시에 가장 직관적이고 솔직한 음식이기도 합니다. <br>
           한 입 베어 물었을 때 재료 하나하나가 어떤 말을 건네는지, <br>
           그 조화가 얼마나 유쾌한지를 우리는 누구보다 잘 알고 있습니다. <br>
-        </p>
-        <p class="b5">
-          <br>
           그래서 Witchwich는 맛에 대한 진심과 실험정신을 동시에 담았습니다. <br>
           <br>
           브랜드의 모든 요소는 이 작은 질문에서 시작됩니다.<br>
@@ -322,29 +321,35 @@
         </a>
       </li>
       <li><a href="#none"><img src="./images/goods2.png" alt="2">
-        <h4>Recipe book(hard-cover)</h4>
-        <p>45,000</p></a>
+          <h4>Recipe book(hard-cover)</h4>
+          <p>45,000</p>
+        </a>
         <!-- 이미지 갈아끼워야됨!!!!!! -->
       </li>
       <li><a href="#none"><img src="./images/goods3.png" alt="3">
-        <h4>WCH mug</h4>
-        <p>24,000</p></a>
+          <h4>WCH mug</h4>
+          <p>24,000</p>
+        </a>
       </li>
       <li><a href="#none"><img src="./images/goods4.png" alt="4">
-        <h4>Eco bag</h4>
-        <p>19,000</p></a>
+          <h4>Eco bag</h4>
+          <p>19,000</p>
+        </a>
       </li>
       <li><a href="#none"><img src="./images/goods5.png" alt="5">
-        <h4>WCH Hoodie</h4>
-        <p>60,000</p></a>
+          <h4>WCH Hoodie</h4>
+          <p>60,000</p>
+        </a>
       </li>
       <li><a href="#none"><img src="./images/goods6.png" alt="6">
-        <h4>Pot Holder</h4>
-        <p>25,000 </p></a>
+          <h4>Pot Holder</h4>
+          <p>25,000 </p>
+        </a>
       </li>
       <li><a href="#none"><img src="./images/goods7.png" alt="7">
-        <h4>Ball cap</h4>
-        <p>30,000</p></a>
+          <h4>Ball cap</h4>
+          <p>30,000</p>
+        </a>
         <!-- 이미지 갈아끼워야됨!!!!!! -->
       </li>
     </ul>
@@ -573,6 +578,8 @@
   <script src="./script/jquery.simplyscroll.js"></script>
   <!-- 달력 -->
   <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- 꾸민거 js -->
   <script src="./script/jquery.js"></script>
 </body>
